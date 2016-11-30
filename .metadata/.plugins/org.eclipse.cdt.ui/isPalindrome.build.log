@@ -1,7 +1,0 @@
-09:41:08 **** Incremental Build of configuration Debug for project isPalindrome ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o isPalindrome.o "..\\isPalindrome.cpp" 
-g++ -o isPalindrome.exe isPalindrome.o 
-
-09:41:09 Build Finished (took 301ms)
-
