@@ -1,0 +1,28 @@
+package asynCommunication;
+
+import java.awt.*;
+
+public class ClientGraph {
+	private Frame frame;
+	private Button bt;
+	
+	ClientGraph()
+	{
+		init();
+	}
+	
+	public void init()
+	{
+		frame = new Frame("Client");
+		frame.setBounds(50, 50, 200, 200);
+		bt = new Button("新建客户端线程");
+		frame.add(bt);
+		frame.setVisible(true);
+	}
+	
+	public static void main(String args[])
+	{
+		ClientGraph cg = new ClientGraph();
+	}
+	
+}

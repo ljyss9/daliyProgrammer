@@ -1,0 +1,24 @@
+package addnum;
+import java.util.*;
+public class addnum{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int r,x1,y1,x2,y2;
+        int len1,len2;
+        int ret = 0;
+        while(sc.hasNext()){
+            ret = 0;
+            r = sc.nextInt();
+            x1 = sc.nextInt();
+            y1 = sc.nextInt();
+            x2 = sc.nextInt();
+            y2 = sc.nextInt();
+            len1 = Math.abs(x1 - x2);
+            len2 = Math.abs(y1 - y2);
+            System.out.println(len1+" "+ len2);
+            ret += len1/2*r + len2/2*r;
+            System.out.println(ret);
+        }
+    }
+    
+}

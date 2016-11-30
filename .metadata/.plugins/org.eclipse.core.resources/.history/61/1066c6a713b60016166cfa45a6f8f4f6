@@ -1,0 +1,34 @@
+package test1;
+import java.util.*;
+
+public class Main{
+	 public String removeKdigits(String num, int k) {
+	        StringBuffer stemp = new StringBuffer(num);
+	        while(k-->0){
+	            if(stemp.length() == 0)
+	                return "0";
+	            int i;
+	            for( i = 0;i < stemp.length() - 1;i++){
+	                if(stemp.charAt(i) > stemp.charAt(i+1))
+	                {
+	                    stemp.deleteCharAt(i);
+	                    break;
+	                }
+	            }
+	            if(i == stemp.length() - 1){
+	                stemp.deleteCharAt(i);
+	            }
+	        }
+	        int i = 0;
+	        while(stemp.charAt(i) == '0'){
+	            i++;
+	        }
+	        if(i != 0)
+	            stemp.delete(0,i);
+	        return String.valueOf(stemp);
+	    }
+	    public static void main(String args[]){
+	    	Main m = new Main();
+	    	System.out.println(m.arrangeCoins(1804289383));
+	    }
+}

@@ -1,0 +1,29 @@
+package test1;
+import java.util.*;
+
+public class Main{
+	 public int thirdMax(int[] nums) {
+	       Set<Integer> ll = new HashSet<Integer>();
+	       for(int i = 0;i < nums.length;i++)
+	    	   ll.add(nums[i]);
+	       int i = 0;
+	       if(ll.size() >= 3){
+	    	   for(int t:ll)
+	    	   {
+	    		   i++;
+	    		   if(i == 3)
+	    			   return t;
+	    	   }
+	       }
+	       else{
+	    	   for(int t:ll)
+	    		   return t;
+	       }
+	    }
+	 
+	    public static void main(String args[]){
+	    	Main m = new Main();
+	    	int []test = {1,2,3,2};
+	    	System.out.println(m.thirdMax(test));
+	    }
+}

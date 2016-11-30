@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;wordBreak.wordBreak&apos; to &apos;wordB&apos;&#x0D;&#x0A;- Original project: &apos;wordBreak&apos;&#x0D;&#x0A;- Original element: &apos;wordBreak.wordBreak&apos;&#x0D;&#x0A;- Renamed element: &apos;wordBreak.wordB&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;wordBreak&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;wordBreak{wordBreak.java[wordBreak" matchStrategy="1" name="wordB" qualified="false" references="true" similarDeclarations="false" stamp="1467768081366" textual="false" version="1.0"/>
+</session>

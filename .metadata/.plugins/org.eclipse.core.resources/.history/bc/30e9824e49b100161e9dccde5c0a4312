@@ -1,0 +1,9 @@
+ 
+abstract class base{
+	private int name;
+	public  base(int t){
+		name = t;
+	}
+	public abstract String getage();
+	
+}

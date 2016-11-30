@@ -1,0 +1,20 @@
+import java.util.Stack;
+import java.util.Vector;
+
+public class calculator {
+
+	String removeDuplicateLetters(String s){
+		Vector<Integer> cand = new Vector<>(256);
+		Vector<Boolean> visited = new Vector<>(256);
+		
+		
+	}
+	
+	
+	public static void main(String args[])
+	{
+		
+		
+	}
+	
+}

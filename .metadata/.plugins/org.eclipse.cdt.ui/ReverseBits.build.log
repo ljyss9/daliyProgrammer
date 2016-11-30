@@ -1,0 +1,7 @@
+09:18:57 **** Incremental Build of configuration Debug for project ReverseBits ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o ReverseBits.o "..\\ReverseBits.cpp" 
+g++ -o ReverseBits.exe ReverseBits.o 
+
+09:18:59 Build Finished (took 2s.440ms)
+

@@ -1,0 +1,80 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeSet;
+
+public class gird {
+	   public String addStrings(String num1, String num2) {
+	        int i = num1.length() - 1 ,j = num2.length() - 1;
+	        boolean jin = false;
+	        int n1,n2;
+	        StringBuffer s = new StringBuffer();
+	        while(i>= 0 && j>=0){
+	            n1 = num1.charAt(i) - '0';
+	            n2 = num2.charAt(j) - '0';
+	            n1 = n2 + n1;
+	            if(jin)
+	                n1++;
+	            if(n1 >= 10){
+	                jin = true;
+	                n1 = n1 - 10;
+	            }
+	            else{
+	                jin = false;
+	            }
+	            i--;
+	            j--;
+	            s.append(n1 + "");
+	        }
+	        while(i >= 0){
+	            if(jin){
+	                n1 = num1.charAt(i) - '0';
+	                n1 += 1;
+	                if(n1 >= 10)
+	                {
+	                    jin = true;
+	                    n1 = n1-10;
+	                }
+	                else{
+	                    jin = false;
+	                }
+	                s.append(n1+"");
+	            }else{
+	                String sub = num1.substring(0,i);
+	                StringBuffer temp = new StringBuffer(sub);
+	                temp = temp.reverse();
+	                s.append(temp);
+	            }
+	            
+	        }
+	        while(j >= 0){
+	            if(jin){
+	                n1 = num2.charAt(j) - '0';
+	                n1 += 1;
+	                if(n1 >= 10)
+	                {
+	                    jin = true;
+	                    n1 = n1-10;
+	                }
+	                else{
+	                    jin = false;
+	                }
+	                s.append(n1+"");
+	            }else{
+	                String sub = num2.substring(0,i);
+	                StringBuffer temp = new StringBuffer(sub);
+	                temp = temp.reverse();
+	                s.append(temp);
+	            }
+	            
+	        }
+	        if(jin)
+	        s.append("1");
+	        s = s.reverse();
+	        return String.valueOf(s);
+	    }
+    public static void main(String args[])
+    {
+    	gird g = new gird();
+    	System.out.println(g.addStrings("199", "1"));
+    }
+}

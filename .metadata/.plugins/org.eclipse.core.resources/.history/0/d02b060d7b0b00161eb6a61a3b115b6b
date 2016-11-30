@@ -1,0 +1,14 @@
+package asynCommunication;
+
+import java.awt.*;
+
+public class ClientGraph {
+	private Frame frame;
+	private Button bt;
+	public void init()
+	{
+		
+	}
+	
+	
+}

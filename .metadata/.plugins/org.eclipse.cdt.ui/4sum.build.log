@@ -1,0 +1,22 @@
+14:17:24 **** Rebuild of configuration Debug for project 4sum ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o sum.o "..\\sum.cpp" 
+..\sum.cpp: In function `std::vector<int, std::allocator<int> > backward(std::vector<int, std::allocator<int> >&, std::vector<bool, std::allocator<bool> >&, int)':
+..\sum.cpp:17: warning: control reaches end of non-void function
+..\sum.cpp: In function `std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > fourSum(std::vector<int, std::allocator<int> >&, int)':
+..\sum.cpp:25: warning: control reaches end of non-void function
+..\sum.cpp: In function `std::vector<int, std::allocator<int> > twoSum(std::vector<int, std::allocator<int> >&, int)':
+..\sum.cpp:28: error: conversion from `std::map<int, int, std::less<int>, std::allocator<std::pair<const int, int> > >*' to non-scalar type `std::map<int, int, std::less<int>, std::allocator<std::pair<const int, int> > >' requested
+..\sum.cpp:29: warning: comparison between signed and unsigned integer expressions
+..\sum.cpp:34: warning: comparison between signed and unsigned integer expressions
+..\sum.cpp:36: error: could not convert `(&valuemap)->std::map<_Key, _Tp, _Compare, _Alloc>::find [with _Key = int, _Tp = int, _Compare = std::less<int>, _Alloc = std::allocator<std::pair<const int, int> >](((const int&)((const int*)(&(target - (+nums)->std::vector<_Tp, _Alloc>::at [with _Tp = int, _Alloc = std::allocator<int>](((unsigned int)i)))))))' to `bool'
+..\sum.cpp:39: error: expected `)' before '}' token
+..\sum.cpp:39: error: expected `;' before '}' token
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/c++/3.4.5/bits/stl_tree.h: In member function `void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::insert_unique(_II, _II) [with _InputIterator = int, _Key = int, _Val = std::pair<const int, int>, _KeyOfValue = std::_Select1st<std::pair<const int, int> >, _Compare = std::less<int>, _Alloc = std::allocator<std::pair<const int, int> >]':
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/c++/3.4.5/bits/stl_map.h:397:   instantiated from `void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = int, _Key = int, _Tp = int, _Compare = std::less<int>, _Alloc = std::allocator<std::pair<const int, int> >]'
+..\sum.cpp:31:   instantiated from here
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/c++/3.4.5/bits/stl_tree.h:996: error: invalid type argument of `unary *'
+Command canceled
+
+14:17:26 Build Finished (took 1s.365ms)
+

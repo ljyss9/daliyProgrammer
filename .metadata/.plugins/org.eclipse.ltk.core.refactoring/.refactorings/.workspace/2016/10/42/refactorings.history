@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;com.springinaction.knights&apos; to &apos;springTest&apos;" description="Rename resource &apos;com.springinaction.knights&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/com.springinaction.knights" name="springTest" stamp="1476259341279" updateReferences="true"/>
+</session>

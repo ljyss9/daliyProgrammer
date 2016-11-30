@@ -1,0 +1,54 @@
+public class NumMatrix {
+
+    private int[][] sum;
+    public NumMatrix(int[][] matrix) {
+        int row = matrix.length;
+        if(row != 0)
+        {
+        int col = matrix[0].length;
+        sum = new int[row+1][col+1];
+        for(int i = 1;i <= row;i++)
+        {
+            for(int j = 1;j <= col;j++)
+            {
+                sum[i][j] = sum[i-1][j] + sum[i][j-1]  
+            }
+        }
+        }
+    }
+
+    public int sumRegion(int row1, int col1, int row2, int col2) {
+        if(sum.length == 0)
+            return 0;
+        else
+        {
+        	int ret = sum[row1][col1];
+        	boolean f1 = false ,f2 = false;
+        	if(col2 < sum[0].length - 1)
+        	{
+        		ret -=  sum[row1][col2+1];
+        		f1 = true;
+        	}
+        	if(row2 < sum.length - 1)
+        	{
+        		ret -= sum[row2 + 1][col1];
+        		f2 = true;
+        	}
+        	if(f1 && f2)
+        		ret += sum[row2 + 1][col2 + 1];
+        	return ret;
+        }
+    }
+    
+    public static void main(String args[])
+    {
+    	int[][] matrix = {
+    	                {3, 0, 1},
+    	                {1, 4, 3},
+    	                {1, 2, 0}
+    	                };
+    	 NumMatrix nm = new  NumMatrix(matrix);
+    	 System.out.println(nm.sumRegion(1, 0, 2, 2));
+    	 
+    }
+}

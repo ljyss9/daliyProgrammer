@@ -1,0 +1,9 @@
+09:25:44 **** Rebuild of configuration Debug for project MissingNum ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o missingnum.o "..\\missingnum.cpp" 
+..\missingnum.cpp: In function `int missingNumber(std::vector<int, std::allocator<int> >&)':
+..\missingnum.cpp:18: warning: comparison between signed and unsigned integer expressions
+g++ -o MissingNum.exe missingnum.o 
+
+09:25:44 Build Finished (took 474ms)
+

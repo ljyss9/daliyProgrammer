@@ -1,0 +1,22 @@
+import java.util.Stack;
+import java.util.Vector;
+
+public class calculator {
+
+	String removeDuplicateLetters(String s){
+		Vector<Integer> cand = new Vector<>(26);
+		Vector<Boolean> visited = new Vector<>(256);
+		for(int i = 0;i < s.length();i++){
+			cand.get((s.charAt(i) - 'a'))++;
+		}
+		
+	}
+	
+	
+	public static void main(String args[])
+	{
+		
+		
+	}
+	
+}

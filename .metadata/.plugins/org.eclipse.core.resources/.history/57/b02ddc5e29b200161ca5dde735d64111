@@ -1,0 +1,37 @@
+import java.util.Stack;
+import java.util.Vector;
+
+public class calculator {
+
+	String removeDuplicateLetters(String s){
+		int cand [] =new int[26];
+		boolean visited[] = new boolean[26];
+		for(int i = 0;i < s.length();i++){
+			cand[s.charAt(i) - 'a']++;
+		}
+		String result = "0";
+		for(int i = 0;i < s.length(); i++){
+			cand[s.charAt(i) - 'a']--;
+			if(visited[s.charAt(i) - 'a'])
+				continue;
+			while((s.charAt(i) < result.charAt(result.length() - 1)) && cand[result.charAt(result.length() - 1) - 'a'] != 0)
+			{
+				visited[result.charAt(result.length() - 1)] = false;
+				result = result.substring(0,result.length() - 2);
+			}
+			result += s.charAt(i);
+			visited[s.charAt(i)-'a'] = true;
+		}
+		return result.substring(1);
+	}
+	
+	
+	public static void main(String args[])
+	{
+		calculator c = new calculator();
+		System.out.println(c.removeDuplicateLetters("bcabc"));
+		
+		
+	}
+	
+}

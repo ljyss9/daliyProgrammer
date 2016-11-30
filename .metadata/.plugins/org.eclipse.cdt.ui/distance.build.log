@@ -1,0 +1,7 @@
+14:38:47 **** Incremental Build of configuration Debug for project distance ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o dis.o "..\\dis.cpp" 
+g++ -o distance.exe dis.o 
+
+14:38:48 Build Finished (took 302ms)
+
